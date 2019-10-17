@@ -71,7 +71,7 @@
   
 
   
-  <distributionManagement>
+  <!--distributionManagement>
     <snapshotRepository>
         <id>nexus-snapshots</id>
         <url>http://localhost:8081/repository/nexus-snapshots/</url>
@@ -80,7 +80,7 @@
         <id>nexus-releases</id>
         <url>http://localhost:8081/repository/nexus-releases/</url>
     </repository>
-</distributionManagement>
+</distributionManagement-->
 </project>
 
 
