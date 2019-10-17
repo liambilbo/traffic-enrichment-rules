@@ -1,5 +1,5 @@
 # Simple DSL example file
-[keyword]avoid looping=no-loop true
+[keyword]avoid looping=no-loop true 
 [when]There is an Event=$c:Event()
 [when]- with type {type:\w*} = type == Event.Type.{type}
 [when]- with registrationNumber set = registrationNumber != null
