@@ -3,14 +3,6 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>nexus-snapshots</id>
-        <url>http://localhost:8081/repository/nexus-snapshots/</url>
-        <source>DISTRIBUTION_MANAGEMENT</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
         <id>local</id>
         <url>/opt/jboss/.m2/repository</url>
         <source>LOCAL</source>
