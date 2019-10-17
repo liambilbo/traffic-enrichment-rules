@@ -1,5 +1,5 @@
 <kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <kbase name="enrichmentBase" default="true" eventProcessingMode="stream" equalsBehavior="identity" packages="/core, /dsl">
+  <kbase name="enrichmentBase" default="true" eventProcessingMode="stream" equalsBehavior="identity" packages="com.dxc.bankia.traffic_enrichment_rules.core, com.dxc.bankia.traffic_enrichment_rules.dsl">
     <ksession name="enrichmentSession" type="stateful" default="true" clockType="realtime"/>
     <ksession name="enrichmentStatelessSession" type="stateless" default="false" clockType="realtime"/>
   </kbase>
