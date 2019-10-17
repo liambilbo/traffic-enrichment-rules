@@ -1,5 +1,7 @@
 package com.dxc.bankia.traffic_enrichment_rules.dsl;
 
+import com.dxc.bankia.traffic_enrichment_rules.core.*
+
 
 
 rule "Enrich REQUEST_ITV_COMPLIANCE event"
