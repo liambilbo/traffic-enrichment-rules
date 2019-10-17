@@ -1,6 +1,10 @@
 package com.dxc.bankia.traffic_enrichment_rules.dsl;
 
-import com.dxc.bankia.traffic_enrichment_rules.core.*
+import com.dxc.bankia.traffic_enrichment_rules.core.*;
+import java.util.Date;
+import com.dxc.bankia.model.Vehicle;
+import com.dxc.bankia.model.Event;
+import com.dxc.bankia.services.FinderService;
 
 
 
