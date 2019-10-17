@@ -1,4 +1,4 @@
-package com.dxc.bankia.event;
+package com.dxc.bankia.event; 
 
 import java.util.Date;
 import com.dxc.bankia.model.Vehicle;
