@@ -3,6 +3,14 @@
     <repository>
       <include>true</include>
       <metadata>
+        <id>local-maven</id>
+        <url>http://nexus:8081/repository/maven-releases/</url>
+        <source>DISTRIBUTION_MANAGEMENT</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
         <id>central</id>
         <url>https://repo.maven.apache.org/maven2</url>
         <source>PROJECT</source>
@@ -22,14 +30,6 @@
         <id>maven-public</id>
         <url>http://nexus:8081/repository/maven-public/</url>
         <source>PROJECT</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>maven-local</id>
-        <url>http://nexus:8081/repository/maven-releases/</url>
-        <source>DISTRIBUTION_MANAGEMENT</source>
       </metadata>
     </repository>
   </repositories>
