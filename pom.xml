@@ -66,11 +66,11 @@
   </dependencies>
   <distributionManagement>
     <snapshotRepository>
-        <id>maven-local</id>
+        <id>local-maven</id>
         <url>http://nexus:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
     <repository>
-        <id>maven-local</id>
+        <id>local-maven</id>
         <url>http://nexus:8081/repository/maven-releases/</url>
     </repository>
 </distributionManagement>
