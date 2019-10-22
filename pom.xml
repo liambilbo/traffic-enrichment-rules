@@ -8,6 +8,12 @@
   <packaging>kjar</packaging>
   <name>traffic-enrichment-rules-kjar</name>
   <description></description>
+  <repositories>
+      <repository>
+          <id>maven-public</id>
+          <url>http://nexus:8081/repository/maven-public/</url>
+      </repository>
+  </repositories>
   <dependencies>
     <dependency>
       <groupId>com.thoughtworks.xstream</groupId>
@@ -58,6 +64,16 @@
       <scope>compile</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+    <snapshotRepository>
+        <id>maven-local</id>
+        <url>http://nexus:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+        <id>maven-local</id>
+        <url>http://nexus:8081/repository/maven-releases/</url>
+    </repository>
+</distributionManagement>
   <build>
     <plugins>
       <plugin>
