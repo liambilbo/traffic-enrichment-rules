@@ -27,3 +27,13 @@ when
 then
     Enrich with Driver data
 end
+
+rule "Filter REQUEST_DRIVER_ITV_COMPLIANCE event"
+avoid looping
+when
+    There is an Event
+        - with type REQUEST_DRIVER_ITV_COMPLIANCE
+        - with identificationNumber set
+then
+    Filter event
+end
