@@ -40,6 +40,8 @@ declare trait EventNotEnrichedWithDriver extends EventNotEnriched
     identificationNumber:String
 end
 
+declare trait EventToBeFiltered end
+
 rule "Enrich Event with vehicle data"
 no-loop true
 salience 100
@@ -91,7 +93,17 @@ no-loop true
 when
 $so: EventNotEnriched()
 then
-     channels["error-channel"].send((Event)$so.getCore());
+     String message="error - event id "+(Event)$so.getCore().getId()
+     channels["error-channel"].send(message);
+end
+
+rule "Send Event Not Enriched to Error Channel"
+no-loop true
+when
+$so: EventToBeFiltered()
+then
+     String message="filtered - event id "+(Event)$so.getCore().getId()
+     channels["filter-channel"].send(message);
 end
 
 
