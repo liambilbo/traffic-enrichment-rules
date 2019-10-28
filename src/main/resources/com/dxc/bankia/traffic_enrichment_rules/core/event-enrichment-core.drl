@@ -93,16 +93,17 @@ no-loop true
 when
 $so: EventNotEnriched()
 then
-     String message="error - event id "+(Event)$so.getCore().getId()
+     String message="error - event id "+((Event)$so.getCore()).getId()
      channels["error-channel"].send(message);
 end
 
-rule "Send Event Not Enriched to Error Channel"
+rule "Filter Event"
 no-loop true
+salience 150
 when
 $so: EventToBeFiltered()
 then
-     String message="filtered - event id "+(Event)$so.getCore().getId()
+     String message="filtered - event id "+((Event)$so.getCore()).getId()
      channels["filter-channel"].send(message);
 end
 
