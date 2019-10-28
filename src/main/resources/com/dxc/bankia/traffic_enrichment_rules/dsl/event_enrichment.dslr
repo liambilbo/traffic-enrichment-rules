@@ -8,7 +8,7 @@ import com.dxc.bankia.services.FinderService;
 
 
 
-rule "Enrich REQUEST_ITV_COMPLIANCE event"
+rule "Enrich REQUEST_CAR_ITV_COMPLIANCE event"
 avoid looping
 when
     There is an Event
@@ -28,7 +28,7 @@ then
     Enrich with Driver data
 end
 
-rule "Filter REQUEST_DRIVER_ITV_COMPLIANCE event"
+rule "Filter REQUEST_CAR_ITV_COMPLIANCE event"
 avoid looping
 when
     There is an Event
