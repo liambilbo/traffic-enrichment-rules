@@ -101,7 +101,7 @@ rule "Filter Event"
 no-loop true
 salience 150
 when
-$so: EventToBeFiltered()
+    $c: EventToBeFiltered()
 then
      String message="filtered - event id "+((Event)$so.getCore()).getId();
      channels["filter-channel"].send(message);
