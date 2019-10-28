@@ -32,8 +32,8 @@ rule "Filter REQUEST_CAR_ITV_COMPLIANCE event"
 avoid looping
 when
     There is an Event
-        - with type REQUEST_DRIVER_ITV_COMPLIANCE
-        - with identificationNumber set
+        - with type REQUEST_CAR_ITV_COMPLIANCE
+        - with registrationNumber equal to "XSC 66666"
 then
     Filter event
 end
