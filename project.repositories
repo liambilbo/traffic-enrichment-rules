@@ -3,9 +3,9 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>local-maven</id>
-        <url>http://nexus:8081/repository/maven-releases/</url>
-        <source>DISTRIBUTION_MANAGEMENT</source>
+        <id>maven-public</id>
+        <url>http://nexus:8081/repository/maven-public/</url>
+        <source>PROJECT</source>
       </metadata>
     </repository>
     <repository>
@@ -19,17 +19,17 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>local</id>
-        <url>/opt/jboss/.m2/repository</url>
-        <source>LOCAL</source>
+        <id>local-maven</id>
+        <url>http://nexus:8081/repository/maven-releases/</url>
+        <source>DISTRIBUTION_MANAGEMENT</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>maven-public</id>
-        <url>http://nexus:8081/repository/maven-public/</url>
-        <source>PROJECT</source>
+        <id>local</id>
+        <url>/opt/jboss/.m2/repository</url>
+        <source>LOCAL</source>
       </metadata>
     </repository>
   </repositories>
