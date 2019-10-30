@@ -105,6 +105,7 @@ when
 then
      String message="filtered - event id "+((Event)$c.getCore()).getId();
      channels["filter-channel"].send(message);
+     delete( $c );
 end
 
 
