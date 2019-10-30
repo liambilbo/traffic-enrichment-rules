@@ -33,7 +33,7 @@ avoid looping
 when
     There is an Event
         - with type REQUEST_CAR_ITV_COMPLIANCE
-        - with registrationNumber equal to "XSC 66666"
+        - with registrationNumber equal to "XSC 66666tt"
 then
     Filter event
 end
